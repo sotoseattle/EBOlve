@@ -6,7 +6,7 @@ A valuation model based on discounted residual income or abnormal earnings. Simi
 
 Coded in Ruby and Python.
 
-#### Input Parameters
+### Input Parameters
 
 **eps1, eps2, ltg**: Earnings per share estimates. eps1 and eps2 are the one- and two-year forecasts, respectively. Ltg is the constant growth rate at which earnings per share as forecasted to grow from year 3 till the end of a 'growth period'. For publicly traded firms these values can usually be obtained from online services like finance.yahoo.
 
@@ -35,9 +35,19 @@ Example:
 >> puts y.ebo
 ```
 
-Read more about this model in:
+### Read more about this:
 
 - "[Measuring Wealth](http://www.exinfm.com/pdffiles/ca.pdf)." by Prof. Charles M.V.Lee
 - "[Valuing the Dow: A Bottom-Up Approach](http://forum.johnson.cornell.edu/faculty/swaminathan/Published%20Papers/FAJ_99.pdf)" and "[What is the Intrinsic Value of the Dow?](http://forum.johnson.cornell.edu/faculty/swaminathan/Published%20Papers/JF_99.pdf)" by Charles M.C. Lee and Bhaskaran Swaminathan at the Johnson Graduate School of Management, Cornell University.
 - "[The P/B ROE Model Revisited](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CCwQFjAA&url=http%3A%2F%2Fwww.northinfo.com%2Fdocuments%2F29.pdf&ei=odzyUcrpH4mbigKwj4GoBA&usg=AFQjCNFGLWYebY8eIMvOyuMWJ_huroUt5Q&bvm=bv.49784469,d.cGE)" by Jarrod Wilcox.
-- "[Comparison Of The Residual Income Valuation (EBO), Abnormal Earnings Growth And Free Cash Flow Models](http://www.bbronline.com.br/public/edicoes/5_2/artigos/dpwjpedzii2122010102522.pdf)" by Eric Serrano Ferreira, Valcemiro Nossa, Bruno Cesar Aurichio Ledo, Arilda Magna Campagnharo Teixeira and Alexsandro Broedel Lopes .
+- "[Comparison Of The Residual Income Valuation (EBO), Abnormal Earnings Growth And Free Cash Flow Models](http://www.bbronline.com.br/public/edicoes/5_2/artigos/dpwjpedzii2122010102522.pdf)" by Eric Serrano Ferreira, Valcemiro Nossa, Bruno Cesar Aurichio Ledo, Arilda Magna Campagnharo Teixeira and Alexsandro Broedel Lopes.
+ 
+
+### License
+
+<table>
+<tr><td>Author:</td><td>Javier Soto / fsoto [at] xinaptic [dot] com</td></tr>
+<tr><td>Requires:</td><td>Ruby 1.9.x or later and/or Python ??</td></tr>
+</table>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a> Ebolve is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
