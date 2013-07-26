@@ -2,7 +2,7 @@
 
 ### EDWARDS-BELL-OHLSON aLghorithmic Value Engine
 
-A valuation model based on discounted residual income or abnormal earnings. Developed initially in the 1930's, it provides an alternative valuation to DCF based on more readily available accounting data and earnings forecasts. Since the theoretical underpinnings are the same as the DDM (and therefore DCF), it  should give similar results to DCF as long as the clear-surplus assumption holds. (see mathematical derivation below).
+A valuation model based on discounted residual income or abnormal earnings. Similar in nature to EVA (Economic Value Added) developed by Bennett Stewart. Both EVA and EBO rely on the idea of "residual income", defined as earnings in excess of an expected level of performance. Developed initially in the 1930's, it provides an alternative valuation to DCF based on more readily available accounting data and earnings forecasts. Since the theoretical underpinnings are the same as the DDM (and therefore DCF), it  should give similar results to DCF as long as the clear-surplus assumption holds.
 
 Coded in Ruby and Python.
 
@@ -27,16 +27,16 @@ Coded in Ruby and Python.
 
 Example:
 
-```
+```ruby
 $ irb
 >> x = {:eps1=>1.24, :eps2=>1.54, :ltg=>0.241, :book_s=>5.11, :FROE=>0.2,\ :r=>0.0960, :pYOUT=>0.16, :years=>12, :growth_years=>5}
 >> y = Ebolve.new(input)
 >> puts y.ebo
 ```
 
-Read more about this model in "Valuing the Dow: A Bottom-Up Approach" by Charles M.C. Lee and Bhaskaran Swaminathan at the Johnson Graduate School of Management, Cornell University. Financial Analysts Journal - September/October 1999.
+Read more about this model in:
 
-
-#### Mathematical Derivation
-
-...
+- "[Measuring Wealth](http://www.exinfm.com/pdffiles/ca.pdf)." by Prof. Charles M.V.Lee
+- "[Valuing the Dow: A Bottom-Up Approach](http://forum.johnson.cornell.edu/faculty/swaminathan/Published%20Papers/FAJ_99.pdf)" and "[What is the Intrinsic Value of the Dow?](http://forum.johnson.cornell.edu/faculty/swaminathan/Published%20Papers/JF_99.pdf)" by Charles M.C. Lee and Bhaskaran Swaminathan at the Johnson Graduate School of Management, Cornell University.
+- "[The P/B ROE Model Revisited](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CCwQFjAA&url=http%3A%2F%2Fwww.northinfo.com%2Fdocuments%2F29.pdf&ei=odzyUcrpH4mbigKwj4GoBA&usg=AFQjCNFGLWYebY8eIMvOyuMWJ_huroUt5Q&bvm=bv.49784469,d.cGE)" by Jarrod Wilcox.
+- "[Comparison Of The Residual Income Valuation (EBO), Abnormal Earnings Growth And Free Cash Flow Models](http://www.bbronline.com.br/public/edicoes/5_2/artigos/dpwjpedzii2122010102522.pdf)" by Eric Serrano Ferreira, Valcemiro Nossa, Bruno Cesar Aurichio Ledo, Arilda Magna Campagnharo Teixeira and Alexsandro Broedel Lopes .
