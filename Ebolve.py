@@ -11,7 +11,6 @@ class Ebolve:
     self.retain = 1.0 - input['pYOUT']           # % dividend payout, format 0.16
     self.years = input['years']                  # total years horizon, i.e. 12
     self.growth_years = input['growth_years']    # years of LTG, i.e. 5
-    #self.ebo = compute_ebo()
     
   def compute_ebo(self):
     eps, roe, abn_eps, cum_ab_eps, eps_g = 0.0, 0.0, 0.0, 0.0, 0.0
@@ -35,8 +34,7 @@ class Ebolve:
         eps_g = eps
         eps = bv * roe
         eps_g = (eps-eps_g)/eps_g
-        print eps
-      
+            
       abn_eps = (roe - self.r) * bv
       cum_ab_eps += abn_eps / ((1 + self.r)**(year+1))
     
