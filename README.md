@@ -4,8 +4,6 @@
 
 A valuation model based on discounted residual income or abnormal earnings. Similar in nature to EVA (Economic Value Added) developed by Bennett Stewart. Both EVA and EBO rely on the idea of "residual income", defined as earnings in excess of an expected level of performance. Developed initially in the 1930's, it provides an alternative valuation to DCF based on more readily available accounting data and earnings forecasts. Since the theoretical underpinnings are the same as the DDM (and therefore DCF), it  should give similar results to DCF as long as the clear-surplus assumption holds.
 
-Coded in Ruby and Python.
-
 ### Input Parameters
 
 **eps1, eps2, ltg**: Earnings per share estimates. eps1 and eps2 are the one- and two-year forecasts, respectively. Ltg is the constant growth rate at which earnings per share as forecasted to grow from year 3 till the end of a 'growth period'. For publicly traded firms these values can usually be obtained from online services like finance.yahoo.
@@ -25,7 +23,7 @@ Coded in Ruby and Python.
 **EBO Value**: The key output of this model is an estimate of the present value of a firm's cash flows to shareholders. 
 
 
-Example:
+### Usage
 
 ```ruby
 > irb
@@ -33,6 +31,15 @@ Example:
         :r=>0.0960, :pYOUT=>0.16, :years=>12, :growth_years=>5}
 >> y = Ebolve.new(input)
 >> puts y.ebo
+```
+
+```python
+> python
+>>> import Ebolve
+>>> x =   {'eps1':1.24, 'eps2':1.54, 'ltg':0.241, 'book_s':5.11, 'FROE':0.2,\
+           'r':0.0960, 'pYOUT':0.16, 'years':20, 'growth_years':5}
+>>> z = Ebolve.Ebolve(x)
+>>> z.compute_ebo()
 ```
 
 ### Read more about this:
