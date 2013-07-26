@@ -42,9 +42,10 @@ A valuation model based on discounted residual income or abnormal earnings. Simi
 >>> z.compute_ebo()
 ```
 
-### Read more about this:
+### Read more about it:
 
-- "[Measuring Wealth](http://www.exinfm.com/pdffiles/ca.pdf)." by Prof. Charles M.V.Lee
+- "[Residual Income Valuation](http://en.wikipedia.org/wiki/Residual_income_valuation)" from Wikipedia.
+- "[Measuring Wealth](http://www.exinfm.com/pdffiles/ca.pdf)." by Prof. Charles M.C.Lee
 - "[Valuing the Dow: A Bottom-Up Approach](http://forum.johnson.cornell.edu/faculty/swaminathan/Published%20Papers/FAJ_99.pdf)" and "[What is the Intrinsic Value of the Dow?](http://forum.johnson.cornell.edu/faculty/swaminathan/Published%20Papers/JF_99.pdf)" by Charles M.C. Lee and Bhaskaran Swaminathan at the Johnson Graduate School of Management, Cornell University.
 - "[The P/B ROE Model Revisited](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CCwQFjAA&url=http%3A%2F%2Fwww.northinfo.com%2Fdocuments%2F29.pdf&ei=odzyUcrpH4mbigKwj4GoBA&usg=AFQjCNFGLWYebY8eIMvOyuMWJ_huroUt5Q&bvm=bv.49784469,d.cGE)" by Jarrod Wilcox.
 - "[Comparison Of The Residual Income Valuation (EBO), Abnormal Earnings Growth And Free Cash Flow Models](http://www.bbronline.com.br/public/edicoes/5_2/artigos/dpwjpedzii2122010102522.pdf)" by Eric Serrano Ferreira, Valcemiro Nossa, Bruno Cesar Aurichio Ledo, Arilda Magna Campagnharo Teixeira and Alexsandro Broedel Lopes.
