@@ -6,7 +6,7 @@ require 'rubygems'
 #	 Javier Soto © 2013                             #
 ###################################################
 
-class Bebop
+class Ebolve
   attr_reader :ebo
   
 	def initialize (input)
@@ -55,7 +55,7 @@ class Bebop
     warn("WARN: terminal value is negative: #{terminal_Value}") if terminal_Value<0.0
     warn("WARN: negative earnings in perpetuity: #{eps}") if eps<0.0
     warn("WARN: negative abnormal earnings in perpetuity: #{abn_eps}") if abn_eps<0.0
-    warn("WARN: earnings growing in perpetuity at : #{100*eps_g}") if eps_g>0.1
+    warn("WARN: earnings growing in perpetuity at : #{100*eps_g}%") if (eps_g>0.1 || eps_g<0.06)
 
     return (@book_s + cum_ab_eps + terminal_Value)
 	end
