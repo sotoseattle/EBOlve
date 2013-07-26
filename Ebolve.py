@@ -1,3 +1,5 @@
+import warnings
+
 class Ebolve:
   """"  EBOLVE (EDWARDS-BELL-OHLSON aLghorithmic Value Engine"""
   
@@ -37,8 +39,13 @@ class Ebolve:
             
       abn_eps = (roe - self.r) * bv
       cum_ab_eps += abn_eps / ((1 + self.r)**(year+1))
-    
     terminal_Value = ((self.FROE - self.r) * bv) / (self.r * (1 + self.r)**self.years)
     
+    if bv<0.0 : print("WARN: book value is negative: %f" % bv)
+    if terminal_Value<0.0 : print("WARN: terminal value is negative: %f" % terminal_Value)
+    if eps<0.0 : print("WARN: negative earnings in perpetuity: %f" % eps)
+    if abn_eps<0.0 : print("WARN: negative abnormal earnings in perpetuity: %f" % abn_eps)
+    if (eps_g>0.1 or eps_g<0.06) : print('Earnings growing in perpetuity at: %f' % (100*eps_g) + "%")
+    
     return (self.book_s + cum_ab_eps + terminal_Value)
-	
+  
