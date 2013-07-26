@@ -1,6 +1,6 @@
 # EBOlve
 
-### EDWARDS-BELL-OHLSON aLghorithmic Value Engine
+### EDWARDS-BELL-OHLSON aLghorithmic Value Engine (tacky, I know :)
 
 A valuation model based on discounted residual income or abnormal earnings. Similar in nature to EVA (Economic Value Added) developed by Bennett Stewart. Both EVA and EBO rely on the idea of "residual income", defined as earnings in excess of an expected level of performance. Developed initially in the 1930's, it provides an alternative valuation to DCF based on more readily available accounting data and earnings forecasts. Since the theoretical underpinnings are the same as the DDM (and therefore DCF), it  should give similar results to DCF as long as the clear-surplus assumption holds.
 
