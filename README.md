@@ -10,7 +10,7 @@ A valuation model based on discounted residual income or abnormal earnings. Simi
 > irb
 >> x = {:eps1=>1.24, :eps2=>1.54, :ltg=>0.241, :book_s=>5.11, :FROE=>0.2,\
         :r=>0.0960, :pYOUT=>0.16, :years=>12, :growth_years=>5}
->> y = Ebolve.new(input)
+>> y = Ebolve.new(x)
 >> puts y.ebo
 ```
 
