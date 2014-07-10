@@ -59,7 +59,7 @@ A valuation model based on discounted residual income or abnormal earnings. Simi
 
 The MIT License
 
-Copyright (c) 2013 Ji Park
+Copyright (c) 2013 Javier Soto
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
