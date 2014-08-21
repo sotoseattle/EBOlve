@@ -15,6 +15,7 @@ class Ebolve
   attr_reader :ebo
 
   def initialize (input)
+    input = defaults.merge(input)
     @eps1 = input[:eps1]                    # forecasted eps Year 1
     @eps2 = input[:eps2]                    # forecasted eps Year 2, not neg
     @ltg = input[:ltg]                      # contant rate of eps growth, format 0.25
@@ -25,6 +26,10 @@ class Ebolve
     @years = input[:years]                  # total years horizon, i.e. 12
     @growth_years = input[:growth_years]    # years of LTG, i.e. 5
     @ebo = compute_ebo
+  end
+
+  def defaults
+    { ltg: 0.10, r: 0.09, FROE: 0.14, years: 12, growth_years: 15, pYOUT: 0.00,  }
   end
 
   def compute_ebo
